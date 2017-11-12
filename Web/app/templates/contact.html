@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="container perseption-jumbotron">
+            <div class="jumbotron">
+                <div>
+                    <div class="text-primary text-center contact-border">
+                        <h2>CONTACT</h2>
+                    </div>
+                    <div class="text-center contact-subheader">
+                        <p>We'd <i class="fa fa-heart"></i> to hear from you!</p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div ng-controller="ContactController" >
+                            <form class="form-horizontal" novalidate name="f3" ng-submit="ContactData(Contact)">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" class="form-control" ng-model="Contact.Name" aria-describedby="emailHelp" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Email address</label>
+                                    <input type="text" class="form-control" ng-model="Contact.Email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Message</label>
+                                    <input type="text" class="form-control" ng-model="Contact.Message" aria-describedby="emailHelp" placeholder="Write your message or query...">
+                                    <small id="" class="form-text text-muted">What's on your mind?</small>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-block" value="{{submitText}}"/>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

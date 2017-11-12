@@ -1,0 +1,91 @@
+/******************* Navigation Section - Start ******************/
+.navbar-fixed-top {
+    z-index: 500;
+}
+
+.affix {
+      top: 1;
+      width: auto;
+  }
+/******************* Navigation Section - End ******************/
+
+
+/******************* Common Region - Start *********************/
+
+body {
+    margin-top: 50px;
+    font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+footer {
+    border-top: 2px solid #e8e8e8;
+}
+
+.article h1:first-of-type {
+    font-size: 52px;
+}
+
+.img-home-tile-list {
+    max-width: 350px;
+    max-height: 250px;
+}
+
+.contact-border {
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.add-blog-textbox div:nth-child(2) {
+    background-color: white;
+}
+
+/******************* Common Region - End ***********************/
+
+/******************* Bootstrap Overwrite - Start *********************/
+
+.main-header-img .img-responsive {
+    max-height: 250px;
+}
+
+.main-header-img {
+    margin-right: 0;    
+}
+
+.perseption-jumbotron .jumbotron {
+    padding-top: 10px;
+}
+
+.perception-row .row {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.perception-row .row > div {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.perception-row .row > div:first-of-type {
+    border-bottom: 2px solid #dcdcdc;
+}
+
+/*
+.perception-row .row > div div:first-of-type {
+    margin-top: 30px;
+}
+*/
+
+.perception-row .row a p {
+    color: #333;
+}
+/******************* Bootstrap Overwrite - End ***********************/
+
+.commentBox{ 
+    border:1px solid #DBDCE9;
+    margin-left:auto;
+    margin-right:auto;
+    width:550px;
+    border-radius:7px;
+    padding: 25px;
+}

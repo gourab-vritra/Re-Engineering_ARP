@@ -1,0 +1,23 @@
+<!--Start Your Code from here--><div class="container">
+    <div class="row">
+        <div class="container perseption-jumbotron">
+            <div class="jumbotron">
+                <div>
+                    <div class="text-primary text-center contact-border">
+                        <h2>Write A New Story!</h2>
+                    </div>
+                    <div class="text-center contact-subheader">
+                        <p>It's <i class="fa fa-clock-o"></i> to <i class="fa fa-pencil-square"></i> down some new thoughts!</p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div ng-controller="TextEditorController as editor">
+                        <div text-angular ng-model="htmlContent" name="demo-editor" ta-text-editor-class="border-around" ta-html-editor-class="border-around">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Your Code here-->

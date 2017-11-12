@@ -1,0 +1,39 @@
+<div class="row main-header-img">
+    <img src="Images/Header.jpg" class="img-responsive center-block" />
+</div>
+<div class="container">
+    <div class="row">
+        <div class="container perseption-jumbotron">
+            <div class="jumbotron">
+                <nav class="navbar navbar-inverse">
+                    <div class="conatiner-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/latest">Latest</a></li>
+                            <!--<li><a href="#">Popular</a></li>-->
+                            <li><a href="/archive">Archive</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div>
+                    <!--Start Your Code from here-->
+                    <div ng-controller='HomeController as home' class="well perception-row">
+                        <div ng-repeat='article in posts' class="row">
+                            <div class="col-md-12">
+                                <a href="/article?id={{article.Id}}">
+                                    <div class="col-md-4">
+                                        <img class="img-responsive center-block thumbnail img-home-tile-list" src='{{article.HeaderTileLink}}' />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h2 class="text-center">{{article.Title}}</h2>
+                                        <p class="text-center">{{article.SubTitle}}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Your Code from here-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

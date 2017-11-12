@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="container perseption-jumbotron">
+            <div class="jumbotron">
+                <nav class="navbar navbar-inverse">
+                    <div class="conatiner-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/latest">Latest</a></li>
+                            <!--<li><a href="#">Popular</a></li>-->
+                            <li><a href="/archive">Archive</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="article">
+                    <!--Start Your Code from here-->
+                    <!-- Main Article Section - start -->
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div ng-controller='BlogDetailController' class="">
+                                    <h1 class="text-center text-primary">{{article.Title}}</h1>
+                                    <img src="{{article.HeaderTileLink}}" class="img-responsive center-block thumbnail" />
+                                    <!--<div ng-bind-html="article.BlogBody | rawHtml"></div>-->
+                                    <div ta-bind ng-model="article.BlogBody|rawHtml"></div>
+                                </div>
+                                <p>
+                                    The author of this article <text class="text-primary">"Ashutosh Ranjan Pandey"</text> is an Electrical & Electronics Engineer by its profession. He is founder of ARPerception.net and Co-Founder of magictym.in and dynamicenergyplus.com.
+                                </p>
+                            </div>
+                        </div>
+<!--
+                        <div class="commentBox row">
+                            <div class="col-md-12">
+                                <form ng-controller="FrmController" ng-init="showComments()">
+                                    Post Your Comment
+                                    <textarea ng-model="txtcomment" placeholder="Your Comment" style='width:500px'></textarea>
+                                    <button ng-click='btn_add();' style='margin-top:10px;'>Post Comment</button>
+                                    <h4>Comments</h4>
+                                    <ul>
+                                        <li ng-repeat="comnt in comment"> {{ comnt.Comment }} <a  style="float: right;" href="" ng-click="remItem($index)">x</a></li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+-->
+                   </div>
+                <!--  Main Article Section - End  -->
+                <!--End Your Code from here-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+
+

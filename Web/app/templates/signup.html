@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="container perseption-jumbotron">
+            <div class="jumbotron">
+                <div>
+                    <!--Start Your Code from here-->
+                    <br/>
+                    <br/>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-md-offset-3">
+                            <div ng-controller="RegistationController" >
+                                <form novalidate name="f1" ng-submit="SaveData(User)" >
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" ng-model="User.Username" class="form-control" name="usrName" placeholder="Username" ng-class="submitted?'ng-dirty':''" required autofocus />
+                                        <span class="error" ng-show="(f1.usrName.$dirty || submitted) && f1.usrName.$error.required">Username required!</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" ng-model="User.FirstName" class="form-control" name="fName" placeholder="Firstname" ng-class="submitted?'ng-dirty':''" required autofocus />
+                                        <span class="error" ng-show="(f1.fName.$dirty || submitted) && f1.fName.$error.required">Firstname required!</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input type="text" ng-model="User.LastName" class="form-control" name="lName" placeholder="Lastname" ng-class="submitted?'ng-dirty':''" required autofocus />
+                                        <span class="error" ng-show="(f1.lName.$dirty || submitted) && f1.lName.$error.required">Lastname required!</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input type="password" ng-model="User.Password" class="form-control" name="uPassword" placeholder="Password" ng-class="submitted?'ng-dirty':''" required />
+                                        <span class="error" ng-show="(f1.uPassword.$dirty || submitted) && f1.uPassword.$error.required">Password required!</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        <input type="email" ng-model="User.UserEmail" class="form-control" name="uEmailID" placeholder="Email" ng-class="submitted?'ng-dirty':''" />
+                                        <span class="error" ng-show="(f1.uEmailID.$dirty || submitted) && f1.uEmailID.$error.required">Email required</span>
+                                        <span class="error" ng-show="(f1.uEmailID.$dirty || submitted) && f1.uEmailID.$error.email">Email ID not valid!</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label></label>
+                                        <input type="submit" class="btn btn-success btn-block col-md-offset-0" value="{{submitText}}" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                <!--End Your Code here-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app/app.js"></script>
